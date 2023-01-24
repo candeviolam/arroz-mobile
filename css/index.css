@@ -1,0 +1,254 @@
+:root {
+  --color-body: #4b526d;
+  --fondo-pantalla: #282c30;
+  --color-fuente: #d5d7d9;
+  --color-tarjetas: #16171b;
+  --color-botones: #ff6501;
+  --color-megusta: #f50304;
+  --color-gris: #343a3f;
+}
+
+body {
+  background-color: var(--color-body) !important;
+  font-family: "Poppins" !important;
+}
+
+.pantallas {
+  background-color: var(--fondo-pantalla);
+  width: 340px !important;
+  height: 720px;
+  margin-top: 10px;
+  border-radius: 30px;
+  color: var(--color-fuente);
+  position: relative;
+}
+
+/*Primera pantalla*/
+.hora_y_señal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.hora,
+.señal {
+  padding: 3px;
+}
+
+.hora span {
+  font-size: 12px;
+}
+
+.señal img {
+  width: 17px;
+}
+
+.barras_señal {
+  height: 12px;
+}
+
+.notificaciones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notificaciones img {
+  width: 20px;
+}
+
+.titulo {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.botones_buscar {
+  display: flex;
+  flex-direction: row;
+}
+
+.buscar {
+  border: none;
+  border-radius: 8px;
+  width: 240px !important;
+  height: 43px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buscar span {
+  color: var(--color-gris);
+  font-weight: bolder;
+  font-size: small;
+}
+
+.buscar img {
+  width: 25px;
+  margin-left: 3px;
+  margin-right: 8px;
+}
+
+.buscar img,
+.buscar span {
+  opacity: 50%;
+}
+
+.boton_polea {
+  width: 43px !important;
+  height: 43px;
+  margin-left: 10px;
+  background-color: var(--color-botones);
+  border: none;
+  border-radius: 8px;
+}
+
+.boton_polea img {
+  width: 18px;
+}
+
+.parrafo {
+  margin-top: 25px;
+  font-weight: bolder;
+}
+
+.contenedor_tarjetas {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*Tarjetas*/
+.tarjeta {
+  background-color: var(--color-tarjetas);
+  width: 138px;
+  height: 170px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: .2px solid rgba(114, 114, 114, 0.548);
+  z-index: 1;
+}
+
+.borde {
+  border: 0.2px solid rgb(117, 117, 117);
+}
+
+.imagen {
+  display: flex;
+}
+
+.imagen_comida {
+  margin-left: 23px;
+  margin-top: 7px;
+  width: 88px;
+}
+
+.agrandar {
+  width: 95px;
+}
+
+.corazon {
+  width: 10px;
+  margin-left: 5px;
+}
+
+.nombre {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.nombre h6 {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+.precio {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.precio div p {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.mas {
+  width: 20px;
+}
+/*Fin tarjetas*/
+
+.boton_mas {
+  position: absolute;
+  width: 50px;
+  z-index: 6;
+  margin-left: 120px;
+  top: 605px;
+}
+
+.iconos_cuenta {
+  background-color: rgba(68, 68, 68, 0.582);
+  width: 340px;
+  height: 58px;
+  margin-top: 22px;
+  border-end-end-radius: 30px;
+  border-end-start-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.iconos_cuenta img {
+  width: 23px;
+}
+
+.iconos_cuenta .col-2 {
+  display: flex;
+  justify-content: center;
+}
+/*Fin primera pantalla*/
+
+/*Segunda pantalla*/
+.orden {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px !important;
+}
+
+.nombre_orden {
+  display: flex;
+  justify-content: center;
+}
+
+.nombre_orden h5 {
+  font-weight: bold;
+}
+
+.icono_atras img, .icono_cerrar img {
+  width: 18px;
+}
+
+.precio_orden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.precio_orden h3 {
+  font-weight: 800 !important;
+}
+
+.imagen_fried_rice {
+  display: flex;
+  justify-content: center;
+}
+
+.imagen_fried_rice img {
+  width: 150px;
+  border-radius: 80px;
+}
