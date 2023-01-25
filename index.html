@@ -53,8 +53,12 @@
               >Search...</span
             >
           </button>
-          <button class="boton_polea">
+          <!-- <button class="boton_polea">
             <img src="./img/vertical_adjust_icon_213567.png" alt="" />
+          </button> -->
+          <button class="boton_polea">
+            <img src="./img/icons8-adjust-abajo-24.png" alt="" class="polea_a_la_izquierda" />
+            <img src="./img/icons8-adjust-arriba-24 (1).png" alt="" class="polea_a_la_derecha"/>
           </button>
         </div>
         <p class="parrafo">Popular Food</p>
@@ -197,29 +201,11 @@
           <img src="./img/fried_rice.png" alt="" />
         </div>
         <!--Input-->
-        <div class="contenedor_input">
-          <div class="input-group mb-3">
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              id="button-addon1"
-            >
-              -
-            </button>
-            <input
-              type="tel"
-              class="form-control"
-              placeholder="1"
-              aria-label="Example text with button addon"
-              aria-describedby="button-addon1"
-            />
-            <button
-              class="btn btn-outline-secondary"
-              type="button"
-              id="button-addon2"
-            >
-              +
-            </button>
+        <div class="contenedor_input_mas_y_menos">
+          <div class="input_mas_y_menos">
+            <button class="bordear_izquierda">-</button>
+            <button><b>1</b></button>
+            <button class="bordear_derecha">+</button>
           </div>
         </div>
         <!--Fin input-->
@@ -289,28 +275,142 @@
     <!--Fin segunda pantalla-->
     <!--Tercera pantalla-->
     <div class="container pantallas">
-      <div class="container">
-        <div class="row hora_y_señal">
-          <div class="col-3 hora"><span>10:30 AM</span></div>
-          <div class="col-3 señal">
+      <div class="row hora_y_señal">
+        <div class="col-3 hora"><span>10:30 AM</span></div>
+        <div class="col-3 señal">
+          <img
+            src="./img/icons8-no-connection-16.png"
+            alt=""
+            class="barras_señal"
+          /><img src="./img/icons8-wi-fi-32.png" alt="" /><img
+            src="./img/icons8-full-battery-32.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row orden">
+        <div class="col-1 icono_atras">
+          <img src="./img/icons8-back-32.png" alt="" />
+        </div>
+        <div class="col-9 nombre_orden"><h5>My order</h5></div>
+        <div class="col-2 icono_atras">
+          <img src="./img/icons8-close-32.png" alt="" />
+        </div>
+      </div>
+      <!--Tarjetas horizontales-->
+      <div class="container contenedor_tarjeta_horizontal">
+        <div class="row tarjeta_horizontal">
+          <div class="col-4">
             <img
-              src="./img/icons8-no-connection-16.png"
+              src="./img/comida1-3.png"
               alt=""
-              class="barras_señal"
-            /><img src="./img/icons8-wi-fi-32.png" alt="" /><img
-              src="./img/icons8-full-battery-32.png"
-              alt=""
+              class="tarjeta_horizontal_imagen"
             />
           </div>
+          <div class="col-6">
+            <div class="row tarjeta_horizontal_nombre">
+              <span>Fried Rice</span>
+            </div>
+            <div class="row tarjeta_horizontal_precio"><p>$25</p></div>
+          </div>
+          <div class="col-2 tarjeta_horizontal_input">
+            <!--Input-->
+            <div class="boton_input boton_para_arriba">
+              <button class="bordear_arriba">-</button>
+              <button><b>1</b></button>
+              <button class="bordear_abajo">+</button>
+            </div>
+            <!--Fin input-->
+          </div>
         </div>
-        <div class="row orden">
-          <div class="col-1 icono_atras">
-            <img src="./img/icons8-back-32.png" alt="" />
+      </div>
+      <div class="container contenedor_tarjeta_horizontal cortada">
+        <div class="row tarjeta_horizontal">
+          <div class="col-3">
+            <img
+              src="./img/comida3-2.png"
+              alt=""
+              class="tarjeta_horizontal_imagen_cortada"
+            />
           </div>
-          <div class="col-9 nombre_orden"><h5>My order</h5></div>
-          <div class="col-2 icono_atras">
-            <img src="./img/icons8-close-32.png" alt="" />
+          <div class="col-6">
+            <div class="row tarjeta_horizontal_nombre">
+              <span>Vegan Rice</span>
+            </div>
+            <div class="row tarjeta_horizontal_precio"><p>$35</p></div>
           </div>
+          <div class="col-2 tarjeta_horizontal_input">
+            <!--Input-->
+            <div class="boton_input boton_cortado">
+              <button class="bordear_arriba">-</button>
+              <button><b>2</b></button>
+              <button class="bordear_abajo">+</button>
+            </div>
+            <!--Fin input-->
+          </div>
+        </div>
+      </div>
+      <div class="basurero_cortado">
+        <img src="./img/icons8-trash-64.png" alt="" />
+      </div>
+      <div class="separador_tarjeta_horizontal"></div>
+      <div class="container contenedor_tarjeta_horizontal">
+        <div class="row tarjeta_horizontal">
+          <div class="col-4">
+            <img
+              src="./img/comida3-3.png"
+              alt=""
+              class="tarjeta_horizontal_imagen"
+            />
+          </div>
+          <div class="col-6">
+            <div class="row tarjeta_horizontal_nombre">
+              <span>Chess Chilly Fried</span>
+            </div>
+            <div class="row tarjeta_horizontal_precio"><p>$30</p></div>
+          </div>
+          <div class="col-2 tarjeta_horizontal_input">
+            <!--Input-->
+            <div class="boton_input boton_para_arriba">
+              <button class="bordear_arriba">-</button>
+              <button><b>2</b></button>
+              <button class="bordear_abajo">+</button>
+            </div>
+            <!--Fin input-->
+          </div>
+        </div>
+      </div>
+      <!--Fin tarjetas horizontales-->
+      <div class="container contenedor_total">
+        <div class="contenedor_row_total">
+          <div class="row_separadora"></div>
+          <div class="row total">
+            <div class="col-6 total_nombre">Item Total</div>
+            <div class="col-2 total_precio">$90</div>
+          </div>
+          <div class="row total">
+            <div class="col-6 total_nombre">Delivery Charges</div>
+            <div class="col-2 total_precio">$5</div>
+          </div>
+          <div class="row total">
+            <div class="col-6 total_nombre">Packing Charge</div>
+            <div class="col-2 total_precio">$1</div>
+          </div>
+          <div class="row total">
+            <div class="col-6 total_nombre">Offer Discount</div>
+            <div class="col-2 total_precio">$1</div>
+          </div>
+          <div class="row total subrayado">
+            <div class="col-6 total_nombre">Tax</div>
+            <div class="col-2 total_precio">$1</div>
+          </div>
+          <div class="row total_final">
+            <div class="col-6 total_nombre_final">Total Cost</div>
+            <div class="col-2 total_precio_final">$98</div>
+          </div>
+        </div>
+        <div class="boton_checkout">
+          <button>Checkout</button>
         </div>
       </div>
     </div>

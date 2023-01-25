@@ -2,6 +2,7 @@
   --color-body: #4b526d;
   --fondo-pantalla: #282c30;
   --color-fuente: #d5d7d9;
+  --color-numeros: #eff1f2;
   --color-tarjetas: #16171b;
   --color-botones: #ff6501;
   --color-megusta: #f50304;
@@ -97,6 +98,8 @@ body {
 }
 
 .boton_polea {
+  display: flex;
+  flex-direction: row;
   width: 43px !important;
   height: 43px;
   margin-left: 10px;
@@ -106,7 +109,14 @@ body {
 }
 
 .boton_polea img {
-  width: 18px;
+  width: 23px;
+  margin-top: 5px;
+  margin-right: 20px !important;
+}
+
+.polea_a_la_derecha {
+  position: absolute; 
+  margin-left: 9px;
 }
 
 .parrafo {
@@ -127,6 +137,7 @@ body {
   width: 138px;
   height: 170px;
   border-radius: 10px;
+  margin-top: 10px;
   margin-bottom: 20px;
   border: 0.2px solid rgba(114, 114, 114, 0.548);
   z-index: 1;
@@ -175,6 +186,7 @@ body {
 .precio div p {
   font-size: 15px;
   font-weight: 800;
+  color: var(--color-numeros);
 }
 
 .mas {
@@ -186,8 +198,8 @@ body {
   position: absolute;
   width: 50px;
   z-index: 6;
-  margin-left: 123px;
-  top: 605px;
+  margin-left: 121px;
+  top: 627px;
 }
 
 .iconos_cuenta {
@@ -243,6 +255,7 @@ body {
 
 .precio_orden h3 {
   font-weight: 800 !important;
+  color: var(--color-numeros);
 }
 
 .imagen_fried_rice {
@@ -255,24 +268,37 @@ body {
   border-radius: 100px;
 }
 
-.contenedor_input {
-  width: 65px;
-  margin-left: 113px;
-  margin-top: 12px;
-}
-
-.input-group input, .input-group button {
-  height: 25px !important;
-  padding: 5px;
+.contenedor_input_mas_y_menos {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
-.input-group input {
+.input_mas_y_menos {
+  display: flex;
+  flex-direction: row;
+}
+
+.input_mas_y_menos button {
   background-color: transparent;
-  color: var(--color-fuente) !important;
-  border: .1px solid rgba(145, 144, 144, 0.664);
+  border: 0.2px solid var(--color-borde-tarjeta);
+  color: var(--color-numeros);
+  font-size: 13px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bordear_izquierda {
+  border-top-left-radius: 5px;
+  border-end-start-radius: 5px;
+}
+
+.bordear_derecha {
+  border-top-right-radius: 5px;
+  border-end-end-radius: 5px;
 }
 
 .info_nutricional {
@@ -334,7 +360,7 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   border-radius: 8px;
-  border: .2px solid var(--color-borde-tarjeta);
+  border: 0.2px solid var(--color-borde-tarjeta);
 }
 
 .tarjetita_imagen {
@@ -361,11 +387,212 @@ body {
   margin: 0;
 }
 
+.tarjetita_precio .col-1 {
+  color: var(--color-numeros);
+}
+
 .tarjetita_precio img {
   width: 10px;
 }
 /*Fin tarjetitas*/
 /*Fin segunda pantalla*/
 
+/*Tercera pantalla*/
+/*Tarjetas horizontales*/
+.contenedor_tarjeta_horizontal {
+  width: 300px !important;
+  height: 95px;
+  background-color: var(--color-tarjetas);
+  border-radius: 8px;
+  border: 0.2px solid var(--color-borde-tarjeta);
+  margin-top: 15px;
+}
 
+.tarjeta_horizontal {
+  display: flex;
+  align-items: center;
+}
 
+.tarjeta_horizontal_imagen {
+  width: 75px;
+  margin-left: 5px;
+}
+
+.tarjeta_horizontal .col-6 {
+  padding: 10px;
+}
+
+.tarjeta_horizontal_nombre {
+  height: 40px;
+}
+
+.tarjeta_horizontal_nombre span {
+  font-size: small;
+  font-weight: bold;
+}
+
+.tarjeta_horizontal_precio {
+  height: 40px;
+}
+
+.tarjeta_horizontal_precio p {
+  font-weight: bold;
+  color: var(--color-numeros);
+}
+
+.boton_input {
+  display: flex;
+  flex-direction: column;
+}
+
+.boton_input button {
+  background-color: transparent;
+  border: 0.2px solid var(--color-borde-tarjeta);
+  color: var(--color-numeros);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 23px;
+  width: 25px;
+  font-size: 13px;
+}
+
+.bordear_arriba {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.bordear_abajo {
+  border-end-end-radius: 5px;
+  border-end-start-radius: 5px;
+}
+
+.boton_para_arriba {
+  margin-bottom: 5px;
+}
+
+.boton_cortado {
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.cortada {
+  position: absolute;
+  left: 1px;
+  width: 250px !important;
+  border-left: none;
+  border-top-left-radius: none;
+  border-end-start-radius: none;
+}
+
+.tarjeta_horizontal_imagen_cortada {
+  width: 52px;
+  position: absolute;
+  left: 1px;
+  top: 5px;
+}
+
+.basurero_cortado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 95px;
+  background-color: var(--color-tarjetas);
+  border-top-left-radius: 8px;
+  border-end-start-radius: 8px;
+  border-top: 0.2px solid var(--color-borde-tarjeta);
+  border-left: 0.2px solid var(--color-borde-tarjeta);
+  border-bottom: 0.2px solid var(--color-borde-tarjeta);
+  margin-top: 15px;
+  position: absolute;
+  right: 1px;
+}
+
+.basurero_cortado img {
+  width: 45px;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.separador_tarjeta_horizontal {
+  height: 95px;
+  background-color: transparent;
+  margin-top: 20px;
+}
+/*Fin tarjetas horizontales*/
+
+.contenedor_total {
+  background-color: var(--color-gris);
+  width: 300px !important;
+  height: 275px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: 25px;
+}
+
+.row_separadora {
+  height: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px !important;
+  border-bottom: 0.2px solid rgb(71, 71, 71);
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+
+.subrayado {
+  border-bottom: 0.2px solid var(--color-borde-tarjeta);
+}
+
+.total_nombre {
+  font-size: 12px;
+  color: var(--color-borde-tarjeta);
+  filter: brightness(10);
+  padding-left: 0 !important;
+}
+
+.total_precio {
+  font-size: 13px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0 !important;
+  color: var(--color-numeros);
+}
+
+.total_final {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px !important;
+}
+
+.total_nombre_final {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.total_precio_final {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-numeros);
+}
+
+.boton_checkout {
+  display: flex;
+  justify-content: center;
+}
+
+.boton_checkout button {
+  border: none;
+  background-color: var(--color-botones);
+  border-radius: 20px;
+  color: var(--color-fuente);
+  padding: 8px;
+  width: 210px;
+  margin-top: 15px;
+}
+/*Fin tercera pantalla*/
