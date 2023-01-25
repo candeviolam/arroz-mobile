@@ -6,6 +6,7 @@
   --color-botones: #ff6501;
   --color-megusta: #f50304;
   --color-gris: #343a3f;
+  --color-borde-tarjeta: rgb(117, 117, 117);
 }
 
 body {
@@ -127,12 +128,12 @@ body {
   height: 170px;
   border-radius: 10px;
   margin-bottom: 20px;
-  border: .2px solid rgba(114, 114, 114, 0.548);
+  border: 0.2px solid rgba(114, 114, 114, 0.548);
   z-index: 1;
 }
 
 .borde {
-  border: 0.2px solid rgb(117, 117, 117);
+  border: 0.2px solid var(--color-borde-tarjeta);
 }
 
 .imagen {
@@ -185,7 +186,7 @@ body {
   position: absolute;
   width: 50px;
   z-index: 6;
-  margin-left: 120px;
+  margin-left: 123px;
   top: 605px;
 }
 
@@ -227,7 +228,8 @@ body {
   font-weight: bold;
 }
 
-.icono_atras img, .icono_cerrar img {
+.icono_atras img,
+.icono_cerrar img {
   width: 18px;
 }
 
@@ -249,6 +251,121 @@ body {
 }
 
 .imagen_fried_rice img {
-  width: 150px;
-  border-radius: 80px;
+  width: 220px;
+  border-radius: 100px;
 }
+
+.contenedor_input {
+  width: 65px;
+  margin-left: 113px;
+  margin-top: 12px;
+}
+
+.input-group input, .input-group button {
+  height: 25px !important;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group input {
+  background-color: transparent;
+  color: var(--color-fuente) !important;
+  border: .1px solid rgba(145, 144, 144, 0.664);
+}
+
+.info_nutricional {
+  margin-top: 12px;
+}
+
+.info_nutricional .col-3,
+.info_nutricional .col-4,
+.info_nutricional .col-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_nutricional span {
+  font-size: 11px;
+  margin-left: 1px;
+}
+
+.info_nutricional img {
+  width: 15px;
+}
+
+.agregar {
+  display: flex;
+  justify-content: center;
+}
+
+.agregar button {
+  border: none;
+  background-color: var(--color-botones);
+  border-radius: 20px;
+  margin-top: 30px;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-fuente);
+  font-weight: bold;
+  padding: 8px;
+}
+
+.texto {
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+/*Tarjetitas*/
+.contenedor_tarjetitas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.tarjetita {
+  width: 90px;
+  height: 105px;
+  background-color: var(--color-gris);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: .2px solid var(--color-borde-tarjeta);
+}
+
+.tarjetita_imagen {
+  width: 60px;
+  border-radius: 80px;
+  position: absolute;
+  z-index: 6;
+  margin-left: 14px;
+  top: 585px;
+}
+
+.tarjetita_nombre {
+  font-size: 10px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.tarjetita_precio {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bold;
+  width: 90px;
+  margin: 0;
+}
+
+.tarjetita_precio img {
+  width: 10px;
+}
+/*Fin tarjetitas*/
+/*Fin segunda pantalla*/
+
+
+
