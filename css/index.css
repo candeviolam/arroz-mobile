@@ -115,7 +115,7 @@ body {
 }
 
 .polea_a_la_derecha {
-  position: absolute; 
+  position: absolute;
   margin-left: 9px;
 }
 
@@ -339,6 +339,10 @@ body {
   color: var(--color-fuente);
   font-weight: bold;
   padding: 8px;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 .texto {
